@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLANTAS - Inventario</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="logo.png" alt="Llantas Logo" class="logo" />
+        <nav class="menu">
+          <a href="index.html">INICIO</a>
+          <a href="inventory.html" class="active">INVENTARIO</a>
+          <a href="contacto.html">CONTACTO</a>
+          <div class="login-cart-container">
+            <a href="login.html" class="login-btn">INICIAR SESIÓN</a>
+            <a href="carrito.html" class="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="inventory-main">
+      <div class="container">
+        <h1 class="main-title">INVENTARIO DE LLANTAS</h1>
+
+        <div class="inventory-actions">
+          <div class="search-bar">
+            <input type="text" placeholder="Buscar llantas..." />
+            <button class="search-btn">BUSCAR</button>
+          </div>
+          <button class="add-btn">+ AGREGAR</button>
+        </div>
+
+        <div class="inventory-table-container">
+          <table class="inventory-table">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Marca</th>
+                <th>Medida</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>LL-2055516</td>
+                <td>Llanta Radial</td>
+                <td>Michelin</td>
+                <td>205/55R16</td>
+                <td>$1,299</td>
+                <td class="stock-high">15</td>
+                <td class="actions">
+                  <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                  <button class="delete-btn">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>LL-1956515</td>
+                <td>Llanta Todo Terreno</td>
+                <td>Bridgestone</td>
+                <td>195/65R15</td>
+                <td>$1,099</td>
+                <td class="stock-medium">8</td>
+                <td class="actions">
+                  <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                  <button class="delete-btn">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2023 LLANTAS. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

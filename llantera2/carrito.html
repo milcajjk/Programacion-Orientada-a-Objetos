@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLANTAS - Carrito</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="logo.png" alt="Llantas Logo" class="logo" />
+        <nav class="menu">
+          <a href="index.html">INICIO</a>
+          <a href="inventory.html">INVENTARIO</a>
+          <a href="contacto.html">CONTACTO</a>
+          <div class="login-cart-container">
+            <a href="login.html" class="login-btn">INICIAR SESIÓN</a>
+            <a href="carrito.html" class="cart-btn active">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">2</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="cart-main">
+      <div class="container">
+        <h1 class="main-title">TU CARRITO DE COMPRAS</h1>
+
+        <div class="cart-content">
+          <div class="cart-items">
+            <div class="cart-item">
+              <img src="llantera1.jpeg" alt="Llanta" class="cart-item-img" />
+              <div class="cart-item-details">
+                <h3>Llanta Michelin 205/55R16</h3>
+                <p class="cart-item-sku">Código: LL-2055516</p>
+                <p class="cart-item-price">$1,299.00</p>
+                <div class="cart-item-actions">
+                  <div class="quantity-selector">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" value="1" class="quantity-input" />
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                  <button class="remove-btn">Eliminar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <img src="llanta2.jpeg" alt="Llanta" class="cart-item-img" />
+              <div class="cart-item-details">
+                <h3>Llanta Bridgestone 195/65R15</h3>
+                <p class="cart-item-sku">Código: LL-1956515</p>
+                <p class="cart-item-price">$1,099.00</p>
+                <div class="cart-item-actions">
+                  <div class="quantity-selector">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" value="1" class="quantity-input" />
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                  <button class="remove-btn">Eliminar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-summary">
+            <h3>RESUMEN DE COMPRA</h3>
+            <div class="summary-row">
+              <span>Subtotal:</span>
+              <span>$2,398.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Envío:</span>
+              <span>$200.00</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total:</span>
+              <span>$2,598.00</span>
+            </div>
+
+            <button class="checkout-btn">PROCEDER AL PAGO</button>
+            <a href="inventory.html" class="continue-shopping"
+              >← Seguir comprando</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2023 LLANTAS. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

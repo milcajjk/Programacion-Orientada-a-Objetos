@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLANTAS - Inicio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <img src="logo.png" alt="Llantas Logo" class="logo" />
+        <nav class="menu">
+          <a href="index.html" class="active">INICIO</a>
+          <a href="inventory.html">INVENTARIO</a>
+          <a href="contacto.html">CONTACTO</a>
+          <div class="login-cart-container">
+            <a href="login.html" class="login-btn">INICIAR SESIÓN</a>
+            <a href="carrito.html" class="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+      <div class="container">
+        <h1 class="main-title">BUSCA TU LLANTA</h1>
+
+        <div class="search-sections">
+          <!-- Búsqueda por Vehículo -->
+          <section class="search-section vehicle-search">
+            <h2>POR VEHÍCULO</h2>
+            <div class="filter-group">
+              <select>
+                <option value="">Marca</option>
+                <option>Michelin</option>
+                <option>Bridgestone</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <select>
+                <option value="">Modelo</option>
+                <option>Sentra</option>
+                <option>Versa</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <select>
+                <option value="">Año</option>
+                <option>2023</option>
+                <option>2022</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <select>
+                <option value="">Motor</option>
+                <option>1.6L</option>
+                <option>2.0L</option>
+              </select>
+            </div>
+            <button type="button" class="search-button">BUSCA</button>
+          </section>
+
+          <!-- Búsqueda por Medida -->
+          <section class="search-section measure-search">
+            <h2>POR MEDIDA</h2>
+            <div class="filter-group">
+              <select>
+                <option value="">Ancho</option>
+                <option>195</option>
+                <option>205</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <select>
+                <option value="">Alto</option>
+                <option>55</option>
+                <option>60</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <select>
+                <option value="">Rin</option>
+                <option>14"</option>
+                <option>15"</option>
+              </select>
+            </div>
+            <button type="button" class="search-button">BUSCA</button>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Información de Sucursal -->
+    <section class="branch-info-section">
+      <h2>NUESTRA SUCURSAL</h2>
+      <div class="branch-details">
+        <h3>LLANTAS CENTRO</h3>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Av.politecnica UPAP
+        </p>
+        <p><i class="fas fa-phone"></i> 81 44 92 23 42</p>
+        <p><i class="fas fa-clock"></i> Lunes a Sabado: 9am - 7pm</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2023 LLANTAS. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

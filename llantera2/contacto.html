@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLANTAS - Contacto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="logo.png" alt="Llantas Logo" class="logo" />
+        <nav class="menu">
+          <a href="index.html">INICIO</a>
+          <a href="inventory.html">INVENTARIO</a>
+          <a href="contacto.html" class="active">CONTACTO</a>
+          <div class="login-cart-container">
+            <a href="login.html" class="login-btn">INICIAR SESIÓN</a>
+            <a href="carrito.html" class="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <h1 class="main-title">CONTÁCTANOS</h1>
+
+        <div class="contact-container">
+          <section class="contact-info">
+            <h2><i class="fas fa-info-circle"></i> Información</h2>
+            <p><i class="fas fa-phone"></i> 81 1254 5678</p>
+            <p><i class="fas fa-envelope"></i> contacto@llantas.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Av. Pinchol #123, Col.
+              Centro
+            </p>
+            <p><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 7pm</p>
+          </section>
+
+          <section class="contact-form-section">
+            <h2><i class="fas fa-paper-plane"></i> Envíanos un mensaje</h2>
+            <form class="contact-form">
+              <div class="form-group">
+                <input type="text" placeholder="Nombre" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Correo electrónico" required />
+              </div>
+              <div class="form-group">
+                <input type="tel" placeholder="Teléfono" />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Mensaje" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">ENVIAR MENSAJE</button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2023 LLANTAS. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
